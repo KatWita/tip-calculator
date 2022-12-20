@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <img src="./images/logo.svg" alt="" class="header__logo">
+    </header>
+
+    <section class="section">
+      <div class="section__left">
+        <div class="bill">
+          <div class="label__content">
+            <h3 class="label__text">Bill</h3>
+            <p class="label__error"></p>
+          </div>
+          <div class="input__box">
+            <input type="text" class="bill__input" maxlength="6" placeholder="0">
+            <img src="./images/icon-dollar.svg" alt="" class="input__img">
+          </div>
+        </div>
+
+        <div class="selection">
+          <h3 class="selection__text">Select Tip %</h3>
+          <div class="selection__content">
+            <div class="selection__element" data-percent="0.05">
+              <p>5%</p>
+            </div>
+            <div class="selection__element" data-percent="0.1">
+              <p>10%</p>
+            </div>
+            <div class="selection__element" data-percent="0.15">
+              <p>15%</p>
+            </div>
+            <div class="selection__element" data-percent="0.25">
+              <p>25%</p>
+            </div>
+            <div class="selection__element" data-percent="0.5">
+              <p>50%</p>
+            </div>
+            <input type="text" class="selection__input" maxlength="3" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="people">
+          <div class="label__content">
+            <h3 class="label__text">Number of People</h3>
+            <p class="label__error"></p>
+          </div>
+          <div class="input__box">
+            <input type="text" class="people__input" maxlength="3" placeholder="0">
+            <img src="./images/icon-person.svg" alt="" class="input__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="summary section__right">
+        <div class="summary__container">
+          <div class="summary__box">
+            <div class="summary__content">
+              <p class="summary__title">Tip Amount</p>
+              <p class="summary__per">/ person</p>
+            </div>
+            <p class="summary__amount" id="tip">$0.00</p>
+          </div>
+          <div class="summary__box">
+            <div class="summary__content">
+              <p class="summary__title">Total</p>
+              <p class="summary__per">/ person</p>
+            </div>
+            <p class="summary__amount" id="total">$0.00</p>
+          </div>
+        </div>
+        <button class="btn-reset" disabled>reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/KatWita">KatWita</a>.
+  </footer>
+</body>
+
+</html>
